@@ -14,12 +14,12 @@
   <script src="js/uikit.js"></script>
   <script src="js/uikit-icons-florence.js"></script>
   <script src="js/theme.js"></script>
-  <script src="js/newsletter.js" defer="defer"></script>
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      Array.prototype.slice.call(document.querySelectorAll('a span[id^="cloak"]')).forEach(function(span) {
-        span.innerText = span.textContent;
-      });
+    document.addEventListener('DOMContentLoaded', function () {
+      Array.prototype.slice.call(document.querySelectorAll('a span[id^="cloak"]')).forEach(
+          function (span) {
+            span.innerText = span.textContent;
+          });
     });
   </script>
 
@@ -30,11 +30,12 @@
 <div class="tm-page">
 
   <div class="tm-header-mobile uk-hidden@l">
-    <nav class="uk-navbar-container uk-navbar" uk-navbar="">
+    <nav class="uk-navbar-container uk-navbar">
       <div class="uk-navbar-left">
         <a class="uk-navbar-toggle" href="#tm-mobile" uk-toggle="">
           <div uk-navbar-toggle-icon="" class="uk-navbar-toggle-icon uk-icon">
-            <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="navbar-toggle-icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                 data-svg="navbar-toggle-icon">
               <rect y="9" width="20" height="1"></rect>
               <rect y="3" width="20" height="1"></rect>
               <rect y="15" width="20" height="1"></rect>
@@ -55,23 +56,25 @@
       <div class="uk-modal-dialog uk-modal-body uk-text-center uk-flex uk-height-viewport">
 
         <button class="uk-modal-close-full uk-close uk-icon" type="button" uk-close="">
-          <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" data-svg="close-icon">
+          <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"
+               data-svg="close-icon">
             <line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="13" y2="13"></line>
             <line fill="none" stroke="#000" stroke-width="1.1" x1="13" y1="1" x2="1" y2="13"></line>
           </svg>
         </button>
 
         <div class="uk-margin-auto-vertical uk-width-1-1">
-
-
           <div class="uk-child-width-1-1 uk-grid" uk-grid="">
             <div>
               <div class="uk-panel" id="module-0">
-                <ul class="uk-nav uk-nav-primary uk-nav-center" uk-scrollspy="target: [uk-scrollspy-class]; cls: uk-animation-fade; delay: false;">
-                  <li class="uk-active"><a href="#home">Acceuil</a></li>
-                  <li><a class="el-link" href="#tarifs">Tarifs</a></li>
-                  <li><a class="el-link" href="#site" uk-scrollspy="target: [uk-scrollspy-class]; cls: uk-animation-fade; delay: false;">Le Lieu</a></li>
-                  <li><a class="el-link" href="#address">Adresse</a></li>
+                <ul class="uk-nav uk-nav-primary uk-nav-center"
+                    uk-scrollspy="target: [uk-scrollspy-class]; cls: uk-animation-fade; delay: false;">
+                  <li><a href="#home" uk-toggle="target: #tm-mobile">Accueil</a></li>
+                  <li><a href="#tarifs" uk-toggle="target: #tm-mobile">Tarifs</a></li>
+                  <li><a href="#site" uk-toggle="target: #tm-mobile"
+                         uk-scrollspy="target: [uk-scrollspy-class uk-section-default]; cls: uk-animation-fade; delay: false;">Le
+                    Lieu</a></li>
+                  <li><a href="#address" uk-toggle="target: #tm-mobile">Adresse</a></li>
                 </ul>
               </div>
             </div>
@@ -88,27 +91,29 @@
   <div class="tm-header uk-visible@l tm-header-transparent" uk-header="">
 
 
-    <div uk-sticky="" media="@l" cls-active="uk-navbar-sticky" sel-target=".uk-navbar-container" class="uk-sticky">
+    <div uk-sticky="" media="@l" cls-active="uk-navbar-sticky" sel-target=".uk-navbar-container"
+         class="uk-sticky">
 
       <div class="uk-navbar-container uk-navbar-transparent uk-light">
 
         <div class="uk-container">
-          <nav class="uk-navbar" uk-navbar="{&quot;align&quot;:&quot;center&quot;,&quot;boundary&quot;:&quot;!.uk-navbar-container&quot;}">
+          <nav class="uk-navbar"
+               uk-navbar="{&quot;align&quot;:&quot;center&quot;,&quot;boundary&quot;:&quot;!.uk-navbar-container&quot;}">
 
             <div class="uk-navbar-left">
               <a href="#home" class="uk-navbar-item uk-logo">
-				<img src="img/logo/logo-inverted.png" class="uk-logo-inverse" alt="Work In Excess">
-				</a>
+                <img src="img/logo/logo-inverted.png" class="uk-logo-inverse" alt="Work In Excess">
+              </a>
             </div>
 
             <div class="uk-navbar-center">
 
               <ul class="uk-navbar-nav">
 
-                <li><a href="#home">Acceuil</a></li>
-				  <li><a href="#tarifs">Tarifs</a></li>
-				  <li><a href="#site">Le Lieu</a></li>
-				  <li><a href="#address">Adresse</a></li>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#tarifs">Tarifs</a></li>
+                <li><a href="#site">Le Lieu</a></li>
+                <li><a href="#address">Adresse</a></li>
 
               </ul>
 
@@ -141,7 +146,8 @@
   </div>
 
 
-  <div id="home" class="demo uk-section-primary uk-section uk-padding-remove-vertical" tm-header-transparent="dark">
+  <div id="home" class="demo uk-section-primary uk-section uk-padding-remove-vertical"
+       tm-header-transparent="dark">
 
 
     <div class="uk-grid-margin uk-grid uk-grid-stack" uk-grid="">
@@ -153,34 +159,43 @@
           <div class="uk-position-relative">
 
             <ul class="uk-slideshow-items" style="min-height: 712.688px;">
-              <li class="el-item uk-active uk-transition-active" style="transform: translateX(0px); z-index: -1;">
+              <li class="el-item uk-active uk-transition-active"
+                  style="transform: translateX(0px); z-index: -1;">
 
-                <div class="uk-position-cover" uk-slideshow-parallax="scale: 1,1.2,1.2" style="transform: scale(1.2);">
+                <div class="uk-position-cover" uk-slideshow-parallax="scale: 1,1.2,1.2"
+                     style="transform: scale(1.2);">
 
                   <img class="el-image uk-cover" alt="" uk-cover="" uk-img="target: !.uk-slideshow-items" data-src="./img/front/salon.jpg"
                        data-srcset="./img/front/salon.jpg 768w, ./img/front/salon.jpg 1024w, ./img/front/salon.jpg 1366w, ./img/front/salon.jpg 1600w, ./img/front/salon.jpg 1920w, ./img/front/salon.jpg 2560w"
-                       data-sizes="(max-aspect-ratio: 2560/1140) 225vh" data-width="2560" data-height="1140" src="./img/front/salon.jpg"
-                       style="width: 1602px; height: 714px;" sizes="(max-aspect-ratio: 2560/1140) 225vh"
+                       data-sizes="(max-aspect-ratio: 2560/1920) 225vh" data-width="2560" data-height="1920" src="./img/front/salon.jpg"
+                       sizes="(max-aspect-ratio: 2560/1920) 225vh"
                        srcset="./img/front/salon.jpg 768w, ./img/front/salon.jpg 1024w, ./img/front/salon.jpg 1366w, ./img/front/salon.jpg 1600w, ./img/front/salon.jpg 1920w, ./img/front/salon.jpg 2560w">
 
                 </div>
-                <div class="uk-position-cover" uk-slideshow-parallax="opacity: 0.2,0,0; backgroundColor: #000,#000"
+                <div class="uk-position-cover"
+                     uk-slideshow-parallax="opacity: 0.2,0,0; backgroundColor: #000,#000"
                      style="background-color: rgb(0, 0, 0); opacity: 0;"></div>
 
-                <div class="uk-position-cover uk-flex uk-flex-left uk-flex-middle uk-container uk-section">
-                  <div class="el-overlay uk-panel uk-width-xlarge">
-                    <div class="el-meta uk-margin uk-h6 uk-margin-remove-adjacent" uk-slideshow-parallax="y: 70,0,-100;"
+                <div
+                    class="uk-position-cover uk-flex uk-flex-left uk-flex-middle uk-container uk-section">
+                  <div class="header-text el-overlay uk-panel uk-width-xlarge">
+                    <div class="el-meta uk-margin uk-h6 uk-margin-remove-adjacent"
+                         uk-slideshow-parallax="y: 70,0,-100;"
                          style="transform: translate3d(0px, 0px, 0px);">Co-Working Nantais
                     </div>
-                    <h1 class="el-title uk-margin uk-heading-primary uk-heading-line" uk-slideshow-parallax="x: 320,0,-250;"
-                        style="transform: translate3d(0px, 0px, 0px); font-family: 'Lato', sans-serif;"><span>Work in Excess</span>
+                    <h1 class="el-title uk-margin uk-heading-primary uk-heading-line"
+                        uk-slideshow-parallax="x: 320,0,-250;"
+                        style="transform: translate3d(0px, 0px, 0px); font-family: 'Lato', sans-serif;">
+                      <span>Work in Excess</span>
                     </h1>
 
 
-                    <div class="el-meta uk-margin uk-h6 uk-margin-remove-adjacent" uk-slideshow-parallax="y: 70,0,-100;"
+                    <div class="el-meta uk-margin uk-h6 uk-margin-remove-adjacent"
+                         uk-slideshow-parallax="y: 70,0,-100;"
                          style="transform: translate3d(0px, 0px, 0px);">
-						 <p>Co-working de 44 places rue paul bellamy</p>
-                    </div>                    
+                      <p>UN LIEU CONVIVIAL
+                        pour bosser et se détendre</p>
+                    </div>
 
                   </div>
                 </div>
@@ -189,19 +204,28 @@
 
                 <div class="uk-position-cover" uk-slideshow-parallax="scale: 1,1.2,1.2">
 
-                  <img class="el-image uk-cover" alt="" uk-cover="" uk-img="target: !.uk-slideshow-items" data-src="./img/front/reunion.jpg"
-                       data-srcset="./img/front/reunion.jpg 768w, ./img/front/reunion.jpg 1024w, ./img/front/reunion.jpg 1366w, ./img/front/reunion.jpg 1600w, ./img/front/reunion.jpg 1920w, ./img/front/reunion.jpg 2560w"
-                       data-sizes="(max-aspect-ratio: 2560/1140) 225vh" data-width="2560" data-height="1140" src="./img/front/reunion.jpg"
-                       sizes="(max-aspect-ratio: 2560/1140) 225vh"
-                       srcset="./img/front/reunion.jpg 768w, ./img/front/reunion.jpg 1024w, ./img/front/reunion.jpg 1366w, ./img/front/reunion.jpg 1600w, ./img/front/reunion.jpg 1920w, ./img/front/reunion.jpg 2560w">
+                  <img class="el-image uk-cover" alt="" uk-cover=""
+                       uk-img="target: !.uk-slideshow-items" data-src="./img/front/2.jpg"
+                       data-srcset="./img/front/2_768.jpg 768w, ./img/front/2_1024.jpg 1024w, ./img/front/2_1366.jpg 1366w, ./img/front/2_1600.jpg 1600w, ./img/front/2_1920.jpg 1920w, ./img/front/2.jpg 2560w"
+                       data-sizes="(max-aspect-ratio: 2560/1920) 225vh" data-width="2560"
+                       data-height="1920" src="./img/front/2.jpg"
+                       style="width: 1602px; height: 714px;"
+                       sizes="(max-aspect-ratio: 2560/1920) 225vh"
+                       srcset="./img/front/2_768.jpg 768w, ./img/front/2_1024.jpg 1024w, ./img/front/2_1366.jpg 1366w, ./img/front/2_1600.jpg 1600w, ./img/front/2_1920.jpg 1920w, ./img/front/2.jpg 2560w">
 
                 </div>
-                <div class="uk-position-cover" uk-slideshow-parallax="opacity: 0.2,0,0; backgroundColor: #000,#000"></div>
+                <div class="uk-position-cover"
+                     uk-slideshow-parallax="opacity: 0.2,0,0; backgroundColor: #000,#000"></div>
 
-                <div class="uk-position-cover uk-flex uk-flex-left uk-flex-middle uk-container uk-section">
-                  <div class="el-overlay uk-panel uk-width-xlarge">
-                    <div class="el-meta uk-margin uk-h6 uk-margin-remove-adjacent" uk-slideshow-parallax="y: 70,0,-100;">youhou</div>
-                    <h1 class="el-title uk-margin uk-heading-primary uk-heading-line" uk-slideshow-parallax="x: 320,0,-250;"><span>On va le finir ce site</span>
+                <div
+                    class="uk-position-cover uk-flex uk-flex-left uk-flex-middle uk-container uk-section">
+                  <div class="header-text el-overlay uk-panel uk-width-xlarge">
+                    <div class="el-meta uk-margin uk-h6 uk-margin-remove-adjacent"
+                         uk-slideshow-parallax="y: 70,0,-100;">youhou
+                    </div>
+                    <h1 class="el-title uk-margin uk-heading-primary uk-heading-line"
+                        uk-slideshow-parallax="x: 320,0,-250;"><span>A 6 minutes du centre ville
+Au pied du bus et à 700 m du tram</span>
                     </h1>
 
 
@@ -216,20 +240,27 @@
 
                 <div class="uk-position-cover" uk-slideshow-parallax="scale: 1,1.2,1.2">
 
-                  <img class="el-image uk-cover" alt="" uk-cover="" uk-img="target: !.uk-slideshow-items"
+                  <img class="el-image uk-cover" alt="" uk-cover=""
+                       uk-img="target: !.uk-slideshow-items"
                        data-src="./img/front/3.jpg"
                        data-srcset="./img/front/3.jpg 768w, ./img/front/3.jpg 1024w, ./img/front/3.jpg 1366w, ./img/front/3.jpg 1600w, ./img/front/3.jpg 1920w, ./img/front/3.jpg 2560w"
-                       data-sizes="(max-aspect-ratio: 2560/1140) 225vh" data-width="2560" data-height="1140"
-                       src="./img/front/3.jpg" sizes="(max-aspect-ratio: 2560/1140) 225vh"
+                       data-sizes="(max-aspect-ratio: 2560/1920) 225vh" data-width="2560"
+                       data-height="1920"
+                       src="./img/front/3.jpg" sizes="(max-aspect-ratio: 2560/1920) 225vh"
                        srcset="./img/front/3.jpg 768w, ./img/front/3.jpg 1024w, ./img/front/3.jpg 1366w, ./img/front/3.jpg 1600w, ./img/front/3.jpg 1920w, ./img/front/3.jpg 2560w">
 
                 </div>
-                <div class="uk-position-cover" uk-slideshow-parallax="opacity: 0.2,0,0; backgroundColor: #000,#000"></div>
+                <div class="uk-position-cover"
+                     uk-slideshow-parallax="opacity: 0.2,0,0; backgroundColor: #000,#000"></div>
 
-                <div class="uk-position-cover uk-flex uk-flex-left uk-flex-middle uk-container uk-section">
-                  <div class="el-overlay uk-panel uk-width-xlarge">
-                    <div class="el-meta uk-margin uk-h6 uk-margin-remove-adjacent" uk-slideshow-parallax="y: 70,0,-100;">youhou 2</div>
-                    <h1 class="el-title uk-margin uk-heading-primary uk-heading-line" uk-slideshow-parallax="x: 320,0,-250;"><span>on va le finir ce site 3</span>
+                <div
+                    class="uk-position-cover uk-flex uk-flex-left uk-flex-middle uk-container uk-section">
+                  <div class="header-text el-overlay uk-panel uk-width-xlarge">
+                    <div class="el-meta uk-margin uk-h6 uk-margin-remove-adjacent"
+                         uk-slideshow-parallax="y: 70,0,-100;">youhou 2
+                    </div>
+                    <h1 class="el-title uk-margin uk-heading-primary uk-heading-line"
+                        uk-slideshow-parallax="x: 320,0,-250;"><span>on va le finir ce site 3</span>
                     </h1>
 
 
@@ -247,32 +278,32 @@
               <ul class="el-nav uk-thumbnav uk-flex-center" uk-margin="">
                 <li uk-slideshow-item="0" class="uk-active uk-first-column">
                   <a href="#"><img alt="" data-src="./img/front/salon-thumb.jpg"
-                                                                                                              data-srcset="./img/front/salon-thumb.jpg 110w, ./img/front/salon-thumb2.jpg 220w"
-                                                                                                              data-sizes="(min-width: 110px) 110px"
-                                                                                                              data-width="320" data-height="290"
-                                                                                                              uk-img="" src="./img/front/salon-thumb.jpg"
-                                                                                                              sizes="(min-width: 110px) 110px"
-                                                                                                              srcset="./img/front/salon-thumb.jpg 110w, ./img/front/salon-thumb2.jpg 220w"></a>
+                                   data-srcset="./img/front/salon-thumb.jpg 110w, ./img/front/salon-thumb2.jpg 220w"
+                                   data-sizes="(min-width: 110px) 110px"
+                                   data-width="320" data-height="290"
+                                   uk-img="" src="./img/front/salon-thumb.jpg"
+                                   sizes="(min-width: 110px) 110px"
+                                   srcset="./img/front/salon-thumb.jpg 110w, ./img/front/salon-thumb2.jpg 220w"></a>
                 </li>
                 <li uk-slideshow-item="1">
-                  <a href="#"><img alt="" data-src="./img/front/reunion-thumb.jpg"
-                                                                                                              data-srcset="./img/front/reunion-thumb.jpg 110w, ./img/front/reunion-thumb2.jpg 220w"
-                                                                                                              data-sizes="(min-width: 110px) 110px"
-                                                                                                              data-width="320" data-height="290"
-                                                                                                              uk-img="" src="./img/front/reunion-thumb.jpg"
-                                                                                                              sizes="(min-width: 110px) 110px"
-                                                                                                              srcset="./img/front/reunion-thumb.jpg 110w, ./img/front/reunion-thumb2.jpg 220w"></a>
+                  <a href="#"><img alt="" data-src="./img/front/2_110.jpg"
+                                   data-srcset="./img/front/2_110.jpg 110w, ./img/front/2_220.jpg 220w"
+                                   data-sizes="(min-width: 110px) 110px"
+                                   data-width="320" data-height="290"
+                                   uk-img="" src="./img/front/2_220.jpg"
+                                   sizes="(min-width: 110px) 110px"
+                                   srcset="./img/front/2_110.jpg 110w, ./img/front/2_220.jpg 220w"></a>
                 </li>
                 <li uk-slideshow-item="2">
                   <a href="#"><img alt=""
-                                                                                                              data-src="./img/front/3.jpg"
-                                                                                                              data-srcset="./img/front/3-thumb.jpg 110w, ./img/front/3-thumb2.jpg 220w"
-                                                                                                              data-sizes="(min-width: 110px) 110px"
-                                                                                                              data-width="320" data-height="290"
-                                                                                                              uk-img=""
-                                                                                                              src="./img/front/3-thumb.jpg"
-                                                                                                              sizes="(min-width: 110px) 110px"
-                                                                                                              srcset="./img/front/3-thumb.jpg 110w, ./img/front/3-thumb2.jpg 220w"></a>
+                                   data-src="./img/front/3.jpg"
+                                   data-srcset="./img/front/3-thumb.jpg 110w, ./img/front/3-thumb2.jpg 220w"
+                                   data-sizes="(min-width: 110px) 110px"
+                                   data-width="320" data-height="290"
+                                   uk-img=""
+                                   src="./img/front/3-thumb.jpg"
+                                   sizes="(min-width: 110px) 110px"
+                                   srcset="./img/front/3-thumb.jpg 110w, ./img/front/3-thumb2.jpg 220w"></a>
                 </li>
               </ul>
 
@@ -290,22 +321,23 @@
 
   </div>
 
-  <div id="tarifs" class="uk-section-default" uk-scrollspy="target: [uk-scrollspy-class]; cls: uk-animation-slide-left-medium; delay: false;">
-    <div class="uk-section uk-section-large" >
+  <div id="tarifs" class="uk-section-default"
+       uk-scrollspy="target: [uk-scrollspy-class]; cls: uk-animation-slide-left-medium; delay: false;">
+    <div class="uk-section">
 
 
       <div class="uk-container">
 
         <div class="uk-grid-large uk-margin uk-grid" uk-grid="">
-          
-		  <div class="uk-width-expand@m uk-grid-item-match uk-flex-middle">
+
+          <div class="uk-width-expand@m uk-grid-item-match uk-flex-middle">
 
 
             <div class="uk-panel-large">
 
               <div
-                class="uk-margin uk-width-large@m uk-margin-auto uk-text-left@m uk-text-center uk-panel uk-scrollspy-inview uk-animation-slide-right-medium"
-                uk-scrollspy-class="uk-animation-slide-right-medium" style="">
+                  class="uk-margin uk-width-large@m uk-margin-auto uk-text-left@m uk-text-center uk-panel uk-scrollspy-inview uk-animation-slide-right-medium"
+                  uk-scrollspy-class="uk-animation-slide-right-medium" style="">
 
 
                 <h2 class="el-title uk-margin uk-h1 uk-heading-line"><span>Les tarifs</span>
@@ -313,17 +345,20 @@
 
 
                 <p><a class="el-link uk-button uk-button-text uk-button-large"
-                      href="https://demo.yootheme.com/themes/joomla/2017/florence/index.php/lookbook?&amp;style=white-red">Place</a></p>
+                      href="https://demo.yootheme.com/themes/joomla/2017/florence/index.php/lookbook?&amp;style=white-red">Place</a>
+                </p>
               </div>
 
-              <ul class="uk-width-large@m uk-margin-auto uk-list uk-list-large" uk-scrollspy-class="uk-animation-slide-right-medium"
+              <ul class="uk-width-large@m uk-margin-auto uk-list uk-list-large"
+                  uk-scrollspy-class="uk-animation-slide-right-medium"
                   style="visibility: hidden;">
                 <li class="el-item">
 
                   <div class="uk-child-width-auto uk-grid-small uk-flex-bottom uk-grid" uk-grid="">
                     <div class="uk-width-expand uk-first-column">
-                      <span class="el-title uk-display-block uk-leader" uk-leader=""><span class="uk-leader-fill"
-                                                                                           data-fill=".......................................................................................................................................................................................................">Place en espace de co-working (9)</span></span>
+                      <span class="el-title uk-display-block uk-leader" uk-leader=""><span
+                          class="uk-leader-fill"
+                          data-fill=".......................................................................................................................................................................................................">Place nomade en espace de co-working</span></span>
                     </div>
                     <div>
                       <div class="el-meta uk-h5 uk-margin-remove">250 €</div>
@@ -336,8 +371,9 @@
 
                   <div class="uk-child-width-auto uk-grid-small uk-flex-bottom uk-grid" uk-grid="">
                     <div class="uk-width-expand uk-first-column">
-                      <span class="el-title uk-display-block uk-leader" uk-leader=""><span class="uk-leader-fill"
-                                                                                           data-fill=".......................................................................................................................................................................................................">Place en bureau fixe (35)</span></span>
+                      <span class="el-title uk-display-block uk-leader" uk-leader=""><span
+                          class="uk-leader-fill"
+                          data-fill=".......................................................................................................................................................................................................">Place en bureau fixe</span></span>
                     </div>
                     <div>
                       <div class="el-meta uk-h5 uk-margin-remove">300 €</div>
@@ -350,42 +386,33 @@
 
 
             </div>
-			
+
             <div class="uk-panel-large" uk-scrollspy-class="uk-animation-slide-right-medium">
 
 
               <div
-                class="uk-margin uk-width-large@m uk-margin-auto uk-text-left@m uk-text-center uk-panel uk-scrollspy-inview uk-animation-slide-right-medium"
-                uk-scrollspy-class="uk-animation-slide-right-medium" style="">
-<p> </p>
-                <p><a class="el-link uk-button uk-button-text uk-button-large"
-                      href="https://demo.yootheme.com/themes/joomla/2017/florence/index.php/lookbook?&amp;style=white-red">Inclus</a></p>
+                  class="uk-margin uk-width-large@m uk-margin-auto uk-text-left@m uk-text-center uk-panel uk-scrollspy-inview uk-animation-slide-right-medium"
+                  uk-scrollspy-class="uk-animation-slide-right-medium" style="">
+                <p></p>
 
-				<p>
-					<div class="el-content uk-margin">
-						fibre, électricité, charges et chauffage.<br/>
-						accès salles de réunion<br/>
-						usage d'une cuisine équipée (frigo, micro-ondes), café.<br/>
-						ménage des bureaux<br/>
-						imprimantes / scanner
-					</div>
-				</p>
+              </div>
 
-     		  </div>
-
+            </div>
           </div>
-        </div>
-		
-		  
-		  <div class="uk-width-expand@m uk-grid-item-match uk-flex-middle uk-first-column">
+
+
+          <div class="uk-width-expand@m uk-grid-item-match uk-flex-middle uk-first-column">
 
 
             <div class="uk-panel">
 
-              <div class="uk-margin uk-text-left@m uk-text-center uk-scrollspy-inview uk-animation-slide-left-medium" uk-scrollspy-class="" style="">
+              <div
+                  class="uk-margin uk-text-left@m uk-text-center uk-scrollspy-inview uk-animation-slide-left-medium"
+                  uk-scrollspy-class="" style="">
                 <img class="el-image" alt="" data-src="./img/place.jpg"
                      data-srcset="./img/place.jpg 510w, ./img/place.jpg 630w"
-                     data-sizes="(min-width: 510px) 510px" data-width="630" data-height="840" uk-img=""
+                     data-sizes="(min-width: 510px) 510px" data-width="630" data-height="840"
+                     uk-img=""
                      src="./img/place.jpg" sizes="(min-width: 510px) 630px"
                      srcset="./img/place.jpg 510w, ./img/place.jpg 630w">
 
@@ -396,314 +423,429 @@
 
           </div>
 
-          
+
+        </div>
+
 
       </div>
 
-
     </div>
 
-  </div>
 
-  <div id="site" class="uk-section-default uk-section-secondary uk-section-large" uk-scrollspy="target: [uk-scrollspy-class]; cls: uk-animation-slide-left-medium; delay: false;">
+    <div id="services" class="uk-section-default uk-section-muted uk-section-large"
+         uk-scrollspy="target: [uk-scrollspy-class]; cls: uk-animation-slide-left-medium; delay: false;">
+      <div class="uk-position-relative">
+        <div class="uk-container">
+          <div class="uk-grid-large uk-margin uk-grid" uk-grid="">
+            <div class="uk-width-expand@m uk-grid-item-match uk-flex-middle uk-first-column">
+              <div class="uk-panel">
+                <div class="uk-margin uk-text-center@m uk-text-center">
 
+                  <div class="uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-3@m uk-grid"
+                       uk-grid="" uk-lightbox="toggle: a[data-type];">
 
-    <div class="uk-position-relative">
-
-      <div class="uk-container">
-
-        <div class="uk-grid-large uk-margin uk-grid" uk-grid="">
-          <div class="uk-width-expand@m uk-grid-item-match uk-flex-middle uk-first-column">
-
-
-            <div class="uk-panel">
-
-              <div class="uk-margin uk-text-center@m uk-text-center">
-                <div class="uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-3@m uk-grid" uk-grid="" uk-lightbox="toggle: a[data-type];">
-                  <div class="uk-first-column">
-                    <div class="el-item uk-box-shadow-medium uk-inline-clip uk-transition-toggle" tabindex="0" uk-scrollspy-class=""
-                         style="visibility: hidden;">
-
-                      <img class="el-image" alt="" data-src="./lieu/1.jpg"
-                           data-srcset="./lieu/1_300.jpg 300w, ./lieu/1_600.jpg 600w"
-                           data-sizes="(min-width: 300px) 300px" data-width="900" data-height="1200" uk-img=""
-                           src="data:image/svg+xml;utf8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;400&quot; height=&quot;300&quot;&gt;&lt;/svg&gt;">
-                      <div class="uk-overlay-default uk-transition-fade uk-position-cover"></div>
-                      <div class="uk-position-bottom-center">
-                        <div class="uk-overlay uk-transition-fade">
-
-
-                          <div class="el-meta uk-margin uk-h6">Bureau fermé 1</div>
-                        </div>
+                    <div class="uk-first-column">
+                      <div class="el-item uk-inline-clip uk-transition-toggle"
+                           tabindex="0" uk-scrollspy-class=""
+                           style="visibility: hidden;">
+                        <svg class="mk-svg-icon" data-name="mk-li-monitor" data-cacheid="icon-5c372c948ed66" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><defs><linearGradient id="gradient-icon-5c372c948ed66" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#5ab57d"></stop><stop offset="100%" stop-color="#8fcda7"></stop></linearGradient></defs><path fill="url(#gradient-icon-5c372c948ed66)" d="M460.038 20.572h-408.076c-26.003 0-47.086 21.075-47.086 47.086v298.209c0 25.995 21.083 47.086 47.086 47.086h149.074v47.086h-39.238c-8.668 0-15.695 7.02-15.695 15.695 0 8.66 7.028 15.695 15.695 15.695h188.342c8.668 0 15.695-7.035 15.695-15.695 0-8.676-7.028-15.695-15.695-15.695h-39.238v-47.086h149.135c26.002 0 47.086-21.09 47.086-47.086v-298.209c0-26.011-21.083-47.086-47.085-47.086zm-408.076 31.39h408.075c8.652 0 15.695 7.035 15.695 15.695v.061l-439.465-.061c0-8.659 7.043-15.695 15.695-15.695zm423.771 31.452v235.428h-439.466v-235.428h439.466zm-196.221 376.624h-47.086v-47.086h47.086v47.086zm180.526-78.476h-408.076c-8.653 0-15.695-7.035-15.695-15.695v-31.329h439.466v31.329c0 8.659-7.043 15.695-15.695 15.695z"></path></svg>
+                        <h2 class="el-title uk-margin uk-h5"> <b>35 BUREAUX FIXES </b></h2>
+                        <p>Bureau fixe avec espace de rangement pour votre usage exclusif. Accès 24/7 et possibilité de privatiser le lieu selon vos besoins. Bureaux de 3,4,5 ou 10 places selon disponibilité
+                        </p>
                       </div>
-                      <a
-                        href="./lieu/1.jpg"
-                        class="uk-position-cover" data-type="image" data-caption="&lt;h4 class='uk-margin-remove'&gt;Bureau fermé bas&lt;/h4&gt;"></a>
-
                     </div>
-                  </div>
-                  <div>
-                    <div class="el-item uk-box-shadow-medium uk-inline-clip uk-transition-toggle" tabindex="0" uk-scrollspy-class=""
-                         style="visibility: hidden;">
+                    <div>
+                      <div class="el-item uk-inline-clip uk-transition-toggle"
+                           tabindex="0" uk-scrollspy-class=""
+                           style="visibility: hidden;">
+                        <svg class="mk-svg-icon" data-name="mk-li-notebook" data-cacheid="icon-5c372c948fcfc" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><defs><linearGradient id="gradient-icon-5c372c948fcfc" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#5ab57d"></stop><stop offset="100%" stop-color="#8fcda7"></stop></linearGradient></defs><path fill="url(#gradient-icon-5c372c948fcfc)" d="M475.702 350.145v-235.375c0-26.003-21.083-47.086-47.086-47.086h-345.294c-26.003 0-47.086 21.083-47.086 47.086v235.375h-31.359v47.086c0 25.995 21.083 47.086 47.086 47.086h408.075c26.003 0 47.086-21.09 47.086-47.086v-47.086h-31.422zm-408.075-235.314v-.061c0-8.656 7.043-15.695 15.695-15.695h345.294c8.653 0 15.695 7.039 15.695 15.695v235.374h-15.695v-203.984c0-8.668-7.028-15.695-15.695-15.695h-313.904c-8.668 0-15.695 7.028-15.695 15.695v203.984h-15.695v-235.313zm345.294 31.329v203.984h-313.904v-203.984h313.904zm62.812 251.07c0 8.652-7.042 15.695-15.695 15.695h-408.076c-8.652 0-15.695-7.043-15.695-15.695v-15.695h439.466v15.695zm-219.733-274.47c4.338 0 7.848-3.514 7.848-7.848s-3.509-7.848-7.848-7.848c-4.337 0-7.848 3.513-7.848 7.848 0 4.333 3.511 7.848 7.848 7.848z"></path></svg>
+                        <h2 class="el-title uk-margin uk-h5"> <b>9 BUREAUX NOMADES</b> </h2>
+                        <p>L’espace de coworking accueille deux grandes tables et des bureaux adjacents pour 11 coworkers. Accès 24/7 au batiment et à toutes les comodités</p>
 
-                      <img class="el-image" alt="" data-src="./lieu/2.jpg"
-                           data-srcset="./lieu/2_300.jpg 300w, ./lieu/2_600.jpg 600w"
-                           data-sizes="(min-width: 300px) 300px" data-width="900" data-height="1200" uk-img=""
-                           src="data:image/svg+xml;utf8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;400&quot; height=&quot;300&quot;&gt;&lt;/svg&gt;">
-                      <div class="uk-overlay-default uk-transition-fade uk-position-cover"></div>
-                      <div class="uk-position-bottom-center">
-                        <div class="uk-overlay uk-transition-fade">
-                          <div class="el-meta uk-margin uk-h6">Cuisine</div>
-                        </div>
                       </div>
-                      <a
-                        href="./lieu/2.jpg"
-                        class="uk-position-cover" data-type="image" data-caption="&lt;h4 class='uk-margin-remove'&gt; Cuisine &lt;/h4&gt;"></a>
                     </div>
-                  </div>
-                  <div>
-                    <div class="el-item uk-box-shadow-medium uk-inline-clip uk-transition-toggle" tabindex="0" uk-scrollspy-class=""
-                         style="visibility: hidden;">
+                    <div>
+                      <div class="el-item uk-inline-clip uk-transition-toggle"
+                           tabindex="0" uk-scrollspy-class=""
+                           style="visibility: hidden;">
 
-                      <img class="el-image" alt="" data-src="./lieu/3.jpg"
-                           data-srcset="./lieu/3_300.jpg 300w, ./lieu/3_600.jpg 600w"
-                           data-sizes="(min-width: 300px) 300px" data-width="900" data-height="1200" uk-img=""
-                           src="data:image/svg+xml;utf8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;400&quot; height=&quot;300&quot;&gt;&lt;/svg&gt;">
-                      <div class="uk-overlay-default uk-transition-fade uk-position-cover"></div>
-                      <div class="uk-position-bottom-center">
-                        <div class="uk-overlay uk-transition-fade">
-                          <div class="el-meta uk-margin uk-h6">Exterieur</div>
-                        </div>
+                        <svg class="mk-svg-icon" data-name="mk-li-users" data-cacheid="icon-5c372c9490c49" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><defs><linearGradient id="gradient-icon-5c372c9490c49" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#5ab57d"></stop><stop offset="100%" stop-color="#8fcda7"></stop></linearGradient></defs><path fill="url(#gradient-icon-5c372c9490c49)" d="M400.64 239.753c24.884-18.73 43.453-51.852 43.453-89.711 0-58.52-41.499-105.958-90.262-105.958-37.935 0-71.357 28.77-84.37 69.065-16.584-40.709-52.32-69.003-92.209-69.003-54.864 0-101.965 51.315-101.965 117.147 0 42.594 21.305 81.924 49.316 103-69.31 22.254-119.493 87.212-119.508 163.91.015 21.933 17.802 39.714 39.736 39.714h264.887c21.933 0 39.721-17.78 39.736-39.714 0-2.498-.199-4.95-.307-7.434h122.435c19.496 0 35.306-15.802 35.321-35.299-.013-68.192-44.639-125.93-106.263-145.717zm-105.176-98.586c.137-1.456.33-2.897.536-4.337.261-1.732.567-3.448.935-5.15.184-.905.352-1.839.574-2.729 3.641-14.622 11.059-27.758 20.569-37.567 10.062-9.932 22.539-15.91 35.751-15.91 13.158 0 25.604 5.948 35.651 15.803 9.565 9.825 17.044 23.007 20.707 37.705.207.859.368 1.748.552 2.621.368 1.732.682 3.495.95 5.257.207 1.426.399 2.851.537 4.292.176 1.839.283 3.678.337 5.533.031.95.108 1.869.115 2.82-.008.95-.084 1.886-.115 2.836-.053 1.854-.161 3.694-.337 5.518-.138 1.456-.33 2.882-.537 4.307-.268 1.763-.582 3.51-.95 5.257-.184.874-.345 1.748-.552 2.621-3.663 14.684-11.143 27.865-20.707 37.69-10.047 9.871-22.493 15.802-35.651 15.802-13.212 0-25.689-5.978-35.751-15.909-9.51-9.795-16.929-22.93-20.569-37.552-.222-.904-.391-1.824-.574-2.728-.368-1.701-.675-3.433-.935-5.165-.206-1.426-.399-2.867-.536-4.338-.177-1.808-.284-3.648-.337-5.502-.031-.935-.108-1.87-.115-2.836.007-.95.084-1.885.115-2.835.053-1.84.161-3.679.337-5.504zm-21.121 57.141c7.817 16.967 19.259 31.36 32.685 41.46-21.19 6.805-40.334 18.148-56.351 32.846-6.713-3.173-13.61-6.039-20.768-8.338 19.987-15.036 36.556-38.363 44.434-65.968zm-166.946-25.413v-.046c-.475-3.832-.72-7.68-.72-11.542v-.046c.008-26.516 11.665-51.592 28.272-68.222 11.993-10.99 26.753-17.503 42.303-17.503 19.305 0 37.437 10.514 50.519 27.282 9.986 13.703 17.205 30.961 19.412 48.909l.008.046c.468 3.832.713 7.695.713 11.541v.062c-.008 26.501-11.664 51.577-28.248 68.207-12.001 10.99-26.761 17.504-42.326 17.504-19.305 0-37.437-10.514-50.519-27.283-9.987-13.687-17.206-30.961-19.414-48.909zm202.322 263.631h-264.887c-4.599 0-8.346-3.74-8.346-8.323.015-61.401 39.276-115.262 97.712-134.022l3.87-1.241c21.006-6.744 56.696-8.338 78.445.015l3.809 1.227c58.45 18.746 97.727 72.605 97.743 134.007 0 4.597-3.748 8.337-8.346 8.337zm161.864-47.148h-126.627c-9.411-40.74-33.237-75.947-65.885-99.919 11.02-8.568 23.658-15.343 37.552-19.803l9.786-3.142c7.817-2.621 34.655-6.882 54.642-.077l9.994 3.203c50.511 16.216 84.454 62.766 84.468 115.798.001 2.178-1.761 3.94-3.93 3.94z"></path></svg>
+                        <h2 class="el-title uk-margin uk-h5"> <b>SALLES DE RÉUNION</b> </h2>
+                        <p>Deux salles de réunion pouvant accueillir jusqu’à une dizaine de personnes et équipée d’un système de visio conférence pour vos appels vers le monde entier !</p>
+
                       </div>
-                      <a
-                        href="./lieu/3.jpg"
-                        class="uk-position-cover" data-type="image" data-caption="&lt;h4 class='uk-margin-remove'&gt; Exterieur &lt;/h4&gt;"></a>
                     </div>
-                  </div>
-                  <div class="uk-grid-margin uk-first-column">
-					<div class="el-item uk-box-shadow-medium uk-inline-clip uk-transition-toggle" tabindex="0" uk-scrollspy-class=""
-                         style="visibility: hidden;">
-
-                      <img class="el-image" alt="" data-src="./lieu/4.jpg"
-                           data-srcset="./lieu/4_300.jpg 300w, ./lieu/4_600.jpg 600w"
-                           data-sizes="(min-width: 300px) 300px" data-width="900" data-height="1200" uk-img=""
-                           src="data:image/svg+xml;utf8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;400&quot; height=&quot;300&quot;&gt;&lt;/svg&gt;">
-                      <div class="uk-overlay-default uk-transition-fade uk-position-cover"></div>
-                      <div class="uk-position-bottom-center">
-                        <div class="uk-overlay uk-transition-fade">
-                          <div class="el-meta uk-margin uk-h6">Co-Working</div>
-                        </div>
+                    <div class="uk-grid-margin uk-first-column">
+                      <div class="el-item uk-inline-clip uk-transition-toggle"
+                           tabindex="0" uk-scrollspy-class=""
+                           style="visibility: hidden;">
+                        <svg class="mk-svg-icon" data-name="mk-li-game-pad" data-cacheid="icon-5c372c94923a0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><defs><linearGradient id="gradient-icon-5c372c94923a0" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#5ab57d"></stop><stop offset="100%" stop-color="#8fcda7"></stop></linearGradient></defs><path fill="url(#gradient-icon-5c372c94923a0)" d="M301.562 4.877h-251.124c-26.003 0-47.086 21.083-47.086 47.086v408.075c0 26.003 21.083 47.086 47.086 47.086h251.123c26.002 0 47.086-21.083 47.086-47.086v-408.076c0-26.003-21.083-47.085-47.085-47.085zm15.695 455.161c0 8.652-7.043 15.695-15.695 15.695h-251.124c-8.653 0-15.695-7.043-15.695-15.695v-408.076c0-8.653 7.042-15.695 15.695-15.695h251.123c8.652 0 15.695 7.042 15.695 15.695v408.076zm-243.245-172.644h204.038c4.337 0 7.848-3.514 7.848-7.848v-204.037c0-4.334-3.51-7.848-7.848-7.848h-204.038c-4.338 0-7.848 3.513-7.848 7.848v204.038c0 4.333 3.51 7.847 7.848 7.847zm7.847-204.037h188.342v188.342h-188.342v-188.342zm31.36 298.209h15.695c8.668 0 15.695-7.028 15.695-15.695 0-8.668-7.028-15.695-15.695-15.695h-15.695v-15.691c0-8.668-7.028-15.695-15.695-15.695s-15.695 7.028-15.695 15.695v15.691h-15.695c-8.668 0-15.695 7.028-15.695 15.695 0 8.668 7.028 15.695 15.695 15.695h15.695v15.695c0 8.668 7.028 15.695 15.695 15.695s15.695-7.028 15.695-15.695v-15.695zm156.952-78.476c-17.335 0-31.39 14.055-31.39 31.39s14.055 31.39 31.39 31.39 31.39-14.055 31.39-31.39-14.054-31.39-31.39-31.39zm0 47.085c-8.653 0-15.695-7.039-15.695-15.695 0-8.657 7.042-15.695 15.695-15.695 8.652 0 15.695 7.039 15.695 15.695s-7.043 15.695-15.695 15.695zm-55.056 0c-17.335 0-31.39 14.055-31.39 31.39s14.056 31.39 31.39 31.39c17.335 0 31.39-14.055 31.39-31.39s-14.055-31.39-31.39-31.39zm0 47.086c-8.652 0-15.695-7.039-15.695-15.695 0-8.657 7.043-15.695 15.695-15.695 8.653 0 15.695 7.039 15.695 15.695 0 8.655-7.042 15.695-15.695 15.695zm-70.505 31.325h-15.695c-8.668 0-15.695 7.028-15.695 15.695s7.028 15.695 15.695 15.695h15.695c8.668 0 15.695-7.028 15.695-15.695s-7.028-15.695-15.695-15.695zm62.78 0h-15.695c-8.668 0-15.695 7.028-15.695 15.695s7.028 15.695 15.695 15.695h15.695c8.668 0 15.695-7.028 15.695-15.695s-7.027-15.695-15.695-15.695z"></path></svg>
+                        <h2 class="el-title uk-margin uk-h5"> <b>DÉTENTE</b> </h2>
+                        <p>Flechette, baby foot, console pour se détente et rencontrer du monde lors des pauses</p>
                       </div>
-                      <a
-                        href="./lieu/4.jpg"
-                        class="uk-position-cover" data-type="image" data-caption="&lt;h4 class='uk-margin-remove'&gt; Co-Working &lt;/h4&gt;"></a>
                     </div>
-                  </div>
-                  <div class="uk-grid-margin">
-					<div class="el-item uk-box-shadow-medium uk-inline-clip uk-transition-toggle" tabindex="0" uk-scrollspy-class=""
-                         style="visibility: hidden;">
+                    <div>
+                      <div class="el-item uk-inline-clip uk-transition-toggle"
+                           tabindex="0" uk-scrollspy-class=""
+                           style="visibility: hidden;">
+                        <svg class="mk-svg-icon" data-name="mk-li-food" data-cacheid="icon-5c372c9493371" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><defs><linearGradient id="gradient-icon-5c372c9493371" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#5ab57d"></stop><stop offset="100%" stop-color="#8fcda7"></stop></linearGradient></defs><path fill="url(#gradient-icon-5c372c9493371)" d="M321.756 259.142l8.285-8.276c7.234 2.345 14.768 3.525 22.301 3.525 18.331 0 36.647-6.974 50.641-20.968l104.64-104.64-122.066-122.082-104.648 104.64c-19.734 19.741-25.512 48.097-17.45 72.927l-8.3 8.307-190.955-190.978c-38.043 38.042-52.688 124.887-4.882 172.693l107.069 107.047-148.223 148.23c-18.393 18.378-18.385 48.205 0 66.582 9.189 9.197 21.243 13.795 33.29 13.795 12.048 0 24.102-4.598 33.299-13.795l149.373-149.38c2.751 1.165 5.671 1.777 8.614 1.777 5.649 0 11.297-2.146 15.611-6.468l6.583-6.576 161.098 161.106c9.189 9.197 21.243 13.795 33.291 13.795 12.055 0 24.102-4.598 33.298-13.795 18.385-18.392 18.393-48.205 0-66.597l-170.869-170.869zm-36.103-52.68l13.603-13.596-5.939-18.285c-4.729-14.561-.973-30.287 9.787-41.047l82.453-82.446 77.679 77.694-82.445 82.446c-7.596 7.588-17.696 11.772-28.449 11.772-4.292 0-8.537-.675-12.607-1.992l-18.293-5.947-21.88 21.887-17.803-17.795-.1-.092-4.307-4.292 8.301-8.307zm-223.089 267.493c-4.001 4.001-8.676 4.598-11.105 4.598-2.429 0-7.096-.597-11.089-4.598-4.009-4.001-4.607-8.676-4.607-11.097 0-2.437.598-7.097 4.599-11.096l148.223-148.232 22.202 22.194-148.223 148.231zm407.86.46c-3.992 4-8.667 4.598-11.096 4.598s-7.097-.598-11.097-4.598l-183.278-183.285-22.202 22.179-161.235-161.213c-26.11-26.118-25.214-69.663-12.316-101.114l401.231 401.224c4.001 4.016 4.599 8.676 4.599 11.112 0 2.421-.598 7.096-4.606 11.097z"></path></svg>
+                        <h2 class="el-title uk-margin uk-h5"> <b>CUISINE AMÉNAGÉE</b> </h2>
+                        <p>Véritable alliée du coworker affamé, une cuisine aménagée est à  votre disposition dans l’espace de coworking : cafetière, bouilloire, micro ondes, frigo </p>
 
-                      <img class="el-image" alt="" data-src="./lieu/5.jpg"
-                           data-srcset="./lieu/5_300.jpg 300w, ./lieu/5_600.jpg 600w"
-                           data-sizes="(min-width: 300px) 300px" data-width="900" data-height="1200" uk-img=""
-                           src="data:image/svg+xml;utf8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;400&quot; height=&quot;300&quot;&gt;&lt;/svg&gt;">
-                      <div class="uk-overlay-default uk-transition-fade uk-position-cover"></div>
-                      <div class="uk-position-bottom-center">
-                        <div class="uk-overlay uk-transition-fade">
-                          <div class="el-meta uk-margin uk-h6">Salon</div>
-                        </div>
                       </div>
-                      <a
-                        href="./lieu/5.jpg"
-                        class="uk-position-cover" data-type="image" data-caption="&lt;h4 class='uk-margin-remove'&gt; Salon &lt;/h4&gt;"></a>
                     </div>
-                  </div>
-                  <div class="uk-grid-margin">
-					<div class="el-item uk-box-shadow-medium uk-inline-clip uk-transition-toggle" tabindex="0" uk-scrollspy-class=""
-                         style="visibility: hidden;">
+                    <div>
+                      <div class="el-item uk-inline-clip uk-transition-toggle"
+                           tabindex="0" uk-scrollspy-class=""
+                           style="visibility: hidden;">
+                        <svg class="mk-svg-icon" data-name="mk-li-coffee" data-cacheid="icon-5c372c9494196" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><defs><linearGradient id="gradient-icon-5c372c9494196" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#5ab57d"></stop><stop offset="100%" stop-color="#8fcda7"></stop></linearGradient></defs><path fill="url(#gradient-icon-5c372c9494196)" d="M90.458 169.708v18.622c-5.786-1.624-11.81-2.605-18.04-2.605-8.951 0-17.71 1.763-26.034 5.212-16.776 6.958-29.842 20.033-36.786 36.816-6.944 16.783-6.928 35.268.031 52.036l18.439 44.465c10.568 25.474 35.23 41.951 62.827 41.951 1.126 0 2.245-.153 3.364-.214 12.829 49.4 57.669 86.032 111.024 86.032h123.492c63.317 0 114.825-51.516 114.825-114.832v-167.483h-353.142zm0 165.075c-14.684-.184-27.758-8.982-33.391-22.562l-18.446-44.465c-3.748-9.028-3.748-18.975-.016-28.003 3.74-9.028 10.775-16.079 19.81-19.818 4.491-1.87 9.204-2.82 14.002-2.82 6.529 0 12.645 1.901 18.04 5.012v112.656zm321.751 2.407c0 46.013-37.429 83.442-83.434 83.442h-123.492c-46.005 0-83.435-37.429-83.435-83.442v-136.091h290.361v136.091zm15.695 138.513h-321.751c-8.668 0-15.695 7.02-15.695 15.695 0 8.66 7.028 15.695 15.695 15.695h321.752c8.668 0 15.695-7.035 15.695-15.695 0-8.675-7.028-15.695-15.696-15.695zm-209.371-344.968c-4.191 7.594-1.433 17.136 6.162 21.327 2.399 1.318 5.004 1.955 7.564 1.955 5.533 0 10.897-2.936 13.756-8.116 16.768-30.395 7.502-54.508.061-73.882-7.066-18.392-10.323-28.654-1.134-42.92 4.69-7.288 2.59-17.002-4.698-21.696-7.28-4.682-16.99-2.59-21.695 4.698-18.239 28.321-9.112 52.082-1.77 71.176 6.659 17.331 11.464 29.854 1.754 47.458zm70.322-.499c-4.461 7.434-2.054 17.075 5.372 21.535 2.529 1.518 5.319 2.246 8.07 2.246 5.326 0 10.522-2.721 13.473-7.618 16.285-27.114 6.751-45.974.444-58.447-5.503-10.886-8.016-15.856-.889-28.026 4.384-7.48 1.87-17.094-5.609-21.473-7.465-4.376-17.098-1.878-21.474 5.609-15.779 26.935-6.307 45.66-.038 58.057 5.502 10.889 8.015 15.855.651 28.117zm76.521 250.591c1.479 0 2.974-.414 4.3-1.287 16.975-11.128 27.106-29.858 27.106-50.105v-81.266c0-4.322-3.51-7.848-7.848-7.848-4.337 0-7.848 3.525-7.848 7.848v81.266c0 14.944-7.487 28.769-20.025 36.985-3.625 2.375-4.629 7.25-2.253 10.867 1.503 2.298 4.009 3.54 6.568 3.54z"></path></svg>
+                        <h2 class="el-title uk-margin uk-h5"> <b>ESPACE DÉTENTE</b> </h2>
+                        <p>« Se réunir est un début ; rester ensemble est un progrès ; travailler ensemble est la réussite. » Henry FORD</p>
 
-                      <img class="el-image" alt="" data-src="./lieu/6.jpg"
-                           data-srcset="./lieu/6_300.jpg 300w, ./lieu/6_600.jpg 600w"
-                           data-sizes="(min-width: 300px) 300px" data-width="900" data-height="1200" uk-img=""
-                           src="data:image/svg+xml;utf8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;400&quot; height=&quot;300&quot;&gt;&lt;/svg&gt;">
-                      <div class="uk-overlay-default uk-transition-fade uk-position-cover"></div>
-                      <div class="uk-position-bottom-center">
-                        <div class="uk-overlay uk-transition-fade">
-                          <div class="el-meta uk-margin uk-h6">Salle de réunion 2</div>
-                        </div>
                       </div>
-                      <a
-                        href="./lieu/6.jpg"
-                        class="uk-position-cover" data-type="image" data-caption="&lt;h4 class='uk-margin-remove'&gt; Salle de réunion 2 &lt;/h4&gt;"></a>
                     </div>
                   </div>
                 </div>
-
               </div>
-
             </div>
-
-
           </div>
-          <div class="uk-width-expand@m uk-grid-item-match uk-flex-middle">
+        </div>
+      </div>
+    </div>
 
 
-            <div class="uk-panel">
 
-              <div class="uk-margin-medium uk-width-large@m uk-text-left@m uk-text-center uk-panel" uk-scrollspy-class="" style="visibility: hidden;">
-
-
-                <h2 class="el-title uk-margin uk-h1"> Le Lieu </h2>
+    <div id="site" class="uk-section-default uk-section-secondary uk-section-large"
+         uk-scrollspy="target: [uk-scrollspy-class]; cls: uk-animation-slide-left-medium; delay: false;">
 
 
-                <div class="el-content uk-margin">Lorem ipsum dolor sit amet, sagittis
-                  vestibulum sed. Posuere est duis euismod interdum et malesuada. Pede
-                  tristique ut ultricies sed, at eget, cras tincidunt orci ac wisi nisl
-                  id. Massa in, vitae odio, ut vel amet sit. Dictum nulla nullam feugiat
-                  donec, nesciunt quis consequat nulla et. Nec ac vehicula, magna sagittis
-                  ipsum nec.
+      <div class="uk-position-relative">
+
+        <div class="uk-container">
+
+          <div class="uk-grid-large uk-margin uk-grid" uk-grid="">
+            <div class="uk-width-expand@m uk-grid-item-match uk-flex-middle uk-first-column">
+
+
+              <div class="uk-panel">
+
+                <div class="uk-margin uk-text-center@m uk-text-center">
+                  <div class="uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-3@m uk-grid"
+                       uk-grid="" uk-lightbox="toggle: a[data-type];">
+                    <div class="uk-first-column">
+                      <div class="el-item uk-box-shadow-medium uk-inline-clip uk-transition-toggle"
+                           tabindex="0" uk-scrollspy-class=""
+                           style="visibility: hidden;">
+
+                        <img class="el-image" alt="" data-src="./lieu/1.jpg"
+                             data-srcset="./lieu/1_300.jpg 300w, ./lieu/1_600.jpg 600w"
+                             data-sizes="(min-width: 300px) 300px" data-width="900"
+                             data-height="1200" uk-img=""
+                             src="data:image/svg+xml;utf8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;400&quot; height=&quot;300&quot;&gt;&lt;/svg&gt;">
+                        <div class="uk-overlay-default uk-transition-fade uk-position-cover"></div>
+                        <div class="uk-position-bottom-center">
+                          <div class="uk-overlay uk-transition-fade">
+
+
+                            <div class="el-meta uk-margin uk-h6">Bureau fermé 1</div>
+                          </div>
+                        </div>
+                        <a
+                            href="./lieu/1.jpg"
+                            class="uk-position-cover" data-type="image"
+                            data-caption="&lt;h4 class='uk-margin-remove'&gt;Bureau fermé bas&lt;/h4&gt;"></a>
+
+                      </div>
+                    </div>
+                    <div>
+                      <div class="el-item uk-box-shadow-medium uk-inline-clip uk-transition-toggle"
+                           tabindex="0" uk-scrollspy-class=""
+                           style="visibility: hidden;">
+
+                        <img class="el-image" alt="" data-src="./lieu/2.jpg"
+                             data-srcset="./lieu/2_300.jpg 300w, ./lieu/2_600.jpg 600w"
+                             data-sizes="(min-width: 300px) 300px" data-width="900"
+                             data-height="1200" uk-img=""
+                             src="data:image/svg+xml;utf8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;400&quot; height=&quot;300&quot;&gt;&lt;/svg&gt;">
+                        <div class="uk-overlay-default uk-transition-fade uk-position-cover"></div>
+                        <div class="uk-position-bottom-center">
+                          <div class="uk-overlay uk-transition-fade">
+                            <div class="el-meta uk-margin uk-h6">Cuisine</div>
+                          </div>
+                        </div>
+                        <a
+                            href="./lieu/2.jpg"
+                            class="uk-position-cover" data-type="image"
+                            data-caption="&lt;h4 class='uk-margin-remove'&gt; Cuisine &lt;/h4&gt;"></a>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="el-item uk-box-shadow-medium uk-inline-clip uk-transition-toggle"
+                           tabindex="0" uk-scrollspy-class=""
+                           style="visibility: hidden;">
+
+                        <img class="el-image" alt="" data-src="./lieu/3.jpg"
+                             data-srcset="./lieu/3_300.jpg 300w, ./lieu/3_600.jpg 600w"
+                             data-sizes="(min-width: 300px) 300px" data-width="900"
+                             data-height="1200" uk-img=""
+                             src="data:image/svg+xml;utf8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;400&quot; height=&quot;300&quot;&gt;&lt;/svg&gt;">
+                        <div class="uk-overlay-default uk-transition-fade uk-position-cover"></div>
+                        <div class="uk-position-bottom-center">
+                          <div class="uk-overlay uk-transition-fade">
+                            <div class="el-meta uk-margin uk-h6">Exterieur</div>
+                          </div>
+                        </div>
+                        <a
+                            href="./lieu/3.jpg"
+                            class="uk-position-cover" data-type="image"
+                            data-caption="&lt;h4 class='uk-margin-remove'&gt; Exterieur &lt;/h4&gt;"></a>
+                      </div>
+                    </div>
+                    <div class="uk-grid-margin uk-first-column">
+                      <div class="el-item uk-box-shadow-medium uk-inline-clip uk-transition-toggle"
+                           tabindex="0" uk-scrollspy-class=""
+                           style="visibility: hidden;">
+
+                        <img class="el-image" alt="" data-src="./lieu/4.jpg"
+                             data-srcset="./lieu/4_300.jpg 300w, ./lieu/4_600.jpg 600w"
+                             data-sizes="(min-width: 300px) 300px" data-width="900"
+                             data-height="1200" uk-img=""
+                             src="data:image/svg+xml;utf8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;400&quot; height=&quot;300&quot;&gt;&lt;/svg&gt;">
+                        <div class="uk-overlay-default uk-transition-fade uk-position-cover"></div>
+                        <div class="uk-position-bottom-center">
+                          <div class="uk-overlay uk-transition-fade">
+                            <div class="el-meta uk-margin uk-h6">Co-Working</div>
+                          </div>
+                        </div>
+                        <a
+                            href="./lieu/4.jpg"
+                            class="uk-position-cover" data-type="image"
+                            data-caption="&lt;h4 class='uk-margin-remove'&gt; Co-Working &lt;/h4&gt;"></a>
+                      </div>
+                    </div>
+                    <div class="uk-grid-margin">
+                      <div class="el-item uk-box-shadow-medium uk-inline-clip uk-transition-toggle"
+                           tabindex="0" uk-scrollspy-class=""
+                           style="visibility: hidden;">
+
+                        <img class="el-image" alt="" data-src="./lieu/5.jpg"
+                             data-srcset="./lieu/5_300.jpg 300w, ./lieu/5_600.jpg 600w"
+                             data-sizes="(min-width: 300px) 300px" data-width="900"
+                             data-height="1200" uk-img=""
+                             src="data:image/svg+xml;utf8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;400&quot; height=&quot;300&quot;&gt;&lt;/svg&gt;">
+                        <div class="uk-overlay-default uk-transition-fade uk-position-cover"></div>
+                        <div class="uk-position-bottom-center">
+                          <div class="uk-overlay uk-transition-fade">
+                            <div class="el-meta uk-margin uk-h6">Salon</div>
+                          </div>
+                        </div>
+                        <a
+                            href="./lieu/5.jpg"
+                            class="uk-position-cover" data-type="image"
+                            data-caption="&lt;h4 class='uk-margin-remove'&gt; Salon &lt;/h4&gt;"></a>
+                      </div>
+                    </div>
+                    <div class="uk-grid-margin">
+                      <div class="el-item uk-box-shadow-medium uk-inline-clip uk-transition-toggle"
+                           tabindex="0" uk-scrollspy-class=""
+                           style="visibility: hidden;">
+
+                        <img class="el-image" alt="" data-src="./lieu/6.jpg"
+                             data-srcset="./lieu/6_300.jpg 300w, ./lieu/6_600.jpg 600w"
+                             data-sizes="(min-width: 300px) 300px" data-width="900"
+                             data-height="1200" uk-img=""
+                             src="data:image/svg+xml;utf8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;400&quot; height=&quot;300&quot;&gt;&lt;/svg&gt;">
+                        <div class="uk-overlay-default uk-transition-fade uk-position-cover"></div>
+                        <div class="uk-position-bottom-center">
+                          <div class="uk-overlay uk-transition-fade">
+                            <div class="el-meta uk-margin uk-h6">Salle de réunion 2</div>
+                          </div>
+                        </div>
+                        <a
+                            href="./lieu/6.jpg"
+                            class="uk-position-cover" data-type="image"
+                            data-caption="&lt;h4 class='uk-margin-remove'&gt; Salle de réunion 2 &lt;/h4&gt;"></a>
+                      </div>
+                    </div>
+                  </div>
+
                 </div>
-                <!--<p><a class="el-link uk-button uk-button-default"
-                      href="#">Learn more</a></p>-->
-
 
               </div>
 
+
+            </div>
+            <div class="uk-width-expand@m uk-grid-item-match uk-flex-middle">
+
+
+              <div class="uk-panel">
+
+                <div
+                    class="uk-margin-medium uk-width-large@m uk-text-left@m uk-text-center uk-panel"
+                    uk-scrollspy-class="" style="visibility: hidden;">
+
+
+                  <h2 class="el-title uk-margin uk-h1"> Le Lieu </h2>
+
+
+                  <div class="el-content uk-margin">Lorem ipsum dolor sit amet, sagittis
+                    vestibulum sed. Posuere est duis euismod interdum et malesuada. Pede
+                    tristique ut ultricies sed, at eget, cras tincidunt orci ac wisi nisl
+                    id. Massa in, vitae odio, ut vel amet sit. Dictum nulla nullam feugiat
+                    donec, nesciunt quis consequat nulla et. Nec ac vehicula, magna sagittis
+                    ipsum nec.
+                  </div>
+                  <!--<p><a class="el-link uk-button uk-button-default"
+                        href="#">Learn more</a></p>-->
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="address" class="uk-section-default uk-section-large"
+         uk-scrollspy="target: [uk-scrollspy-class]; cls: uk-animation-slide-right-medium; delay: false;">
+      <div uk-img=""
+           class="uk-background-norepeat uk-background-bottom-center uk-background-image@l uk-section "
+           uk-parallax="bgx: -50,10"
+           style="background-position-x: calc(50% - 50px);">
+
+
+        <div class="uk-container">
+
+          <div class="uk-grid-large uk-margin uk-grid" uk-grid="">
+            <div class="uk-width-expand@m uk-grid-item-match uk-flex-middle uk-first-column">
+
+
+              <div class="uk-panel">
+
+                <div
+                    class="uk-margin uk-width-xxlarge@m uk-margin-auto uk-text-left@m uk-text-center"
+                    uk-scrollspy-class="uk-animation-slide-left-medium" style="visibility: hidden;">
+                  <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2709.264307638861!2d-1.5659721840366447!3d47.230975679161425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805edf8000d97d1%3A0x3fbe8fd8429e4290!2sWork+in+Excess!5e0!3m2!1sfr!2sfr!4v1546616345155"
+                      width="600" height="450" frameborder="0" style="border:0"
+                      allowfullscreen></iframe>
+                </div>
+
+              </div>
+
+
             </div>
 
+            <div class="uk-width-expand@m uk-grid-item-match uk-flex-middle">
 
+
+              <div class="uk-panel">
+                <div class="uk-margin uk-text-left@m uk-text-center uk-text-meta"
+                     uk-scrollspy-class="" style="visibility: hidden;">Venez visiter
+                </div>
+                <h2 class="uk-margin-medium uk-margin-remove-top uk-text-left@m uk-text-center"
+                    uk-scrollspy-class="" style="visibility: hidden;"><a
+                    class="el-link uk-link-reset" href="tel:+33786481660">+33 7 86 48 16 60</a></h2>
+                <div class="uk-margin uk-text-left@m uk-text-center" uk-scrollspy-class=""
+                     style="visibility: hidden;">
+                </div>
+
+                <div class="uk-margin-large uk-text-left@m uk-text-center">
+                  <div class="uk-child-width-1-1 uk-child-width-1-2@s uk-grid-match uk-grid"
+                       uk-grid="">
+                    <div class="uk-first-column">
+                      <div class="el-item uk-panel" uk-scrollspy-class=""
+                           style="visibility: hidden;">
+
+                        <h3 class="el-title uk-margin uk-h5 uk-text-primary"> Horaires </h3>
+                        <div class="el-content uk-margin"><p>Accueil ouvert du Lundi, vendredi<br>
+                          de 9h à 12h et de 14h à 19h</p></div>
+
+
+                      </div>
+                    </div>
+                    <div>
+                      <div class="el-item uk-panel" uk-scrollspy-class=""
+                           style="visibility: hidden;">
+
+
+                        <h3 class="el-title uk-margin uk-h5 uk-text-primary"> Adresse </h3>
+
+
+                        <div class="el-content uk-margin"><p>182 rue paul Bellamy<br>44000
+                          NANTES<br></p></div>
+
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="uk-margin uk-text-left@m uk-text-center" uk-scrollspy-class=""
+                     style="visibility: hidden;">
+                  <div class="uk-child-width-auto uk-flex-left@m uk-flex-center uk-grid" uk-grid="">
+                    <!--<div class="uk-first-column">
+                      <a class="el-link uk-icon" target="_blank" href="https://twitter.com/?&amp;style=white-red" uk-icon="icon: twitter;">
+                        <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="twitter">
+                          <path
+                            d="M19,4.74 C18.339,5.029 17.626,5.229 16.881,5.32 C17.644,4.86 18.227,4.139 18.503,3.28 C17.79,3.7 17.001,4.009 16.159,4.17 C15.485,3.45 14.526,3 13.464,3 C11.423,3 9.771,4.66 9.771,6.7 C9.771,6.99 9.804,7.269 9.868,7.539 C6.795,7.38 4.076,5.919 2.254,3.679 C1.936,4.219 1.754,4.86 1.754,5.539 C1.754,6.82 2.405,7.95 3.397,8.61 C2.79,8.589 2.22,8.429 1.723,8.149 L1.723,8.189 C1.723,9.978 2.997,11.478 4.686,11.82 C4.376,11.899 4.049,11.939 3.713,11.939 C3.475,11.939 3.245,11.919 3.018,11.88 C3.49,13.349 4.852,14.419 6.469,14.449 C5.205,15.429 3.612,16.019 1.882,16.019 C1.583,16.019 1.29,16.009 1,15.969 C2.635,17.019 4.576,17.629 6.662,17.629 C13.454,17.629 17.17,12 17.17,7.129 C17.17,6.969 17.166,6.809 17.157,6.649 C17.879,6.129 18.504,5.478 19,4.74"></path>
+                        </svg>
+                      </a></div>-->
+                    <div>
+                      <a class="el-link uk-icon" target="_blank"
+                         href="https://www.facebook.com/workinexcess/" uk-icon="icon: facebook;">
+                        <svg width="20" height="20" viewBox="0 0 20 20"
+                             xmlns="http://www.w3.org/2000/svg" data-svg="facebook">
+                          <path
+                              d="M11,10h2.6l0.4-3H11V5.3c0-0.9,0.2-1.5,1.5-1.5H14V1.1c-0.3,0-1-0.1-2.1-0.1C9.6,1,8,2.4,8,5v2H5.5v3H8v8h3V10z"></path>
+                        </svg>
+                      </a></div>
+                    <div>
+                      <a class="el-link uk-icon" target="_blank"
+                         href="https://www.instagram.com/workinexcess/" uk-icon="icon: instagram;">
+                        <svg width="20" height="20" viewBox="0 0 20 20"
+                             xmlns="http://www.w3.org/2000/svg" data-svg="instagram">
+                          <path
+                              d="M13.55,1H6.46C3.45,1,1,3.44,1,6.44v7.12c0,3,2.45,5.44,5.46,5.44h7.08c3.02,0,5.46-2.44,5.46-5.44V6.44 C19.01,3.44,16.56,1,13.55,1z M17.5,14c0,1.93-1.57,3.5-3.5,3.5H6c-1.93,0-3.5-1.57-3.5-3.5V6c0-1.93,1.57-3.5,3.5-3.5h8 c1.93,0,3.5,1.57,3.5,3.5V14z"></path>
+                          <circle cx="14.87" cy="5.26" r="1.09"></circle>
+                          <path
+                              d="M10.03,5.45c-2.55,0-4.63,2.06-4.63,4.6c0,2.55,2.07,4.61,4.63,4.61c2.56,0,4.63-2.061,4.63-4.61 C14.65,7.51,12.58,5.45,10.03,5.45L10.03,5.45L10.03,5.45z M10.08,13c-1.66,0-3-1.34-3-2.99c0-1.65,1.34-2.99,3-2.99s3,1.34,3,2.99 C13.08,11.66,11.74,13,10.08,13L10.08,13L10.08,13z"></path>
+                        </svg>
+                      </a></div>
+                    <!--<div>
+                      <a class="el-link uk-icon" target="_blank" href="https://www.youtube.com/?&amp;style=white-red" uk-icon="icon: youtube;">
+                        <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="youtube">
+                          <path
+                            d="M15,4.1c1,0.1,2.3,0,3,0.8c0.8,0.8,0.9,2.1,0.9,3.1C19,9.2,19,10.9,19,12c-0.1,1.1,0,2.4-0.5,3.4c-0.5,1.1-1.4,1.5-2.5,1.6 c-1.2,0.1-8.6,0.1-11,0c-1.1-0.1-2.4-0.1-3.2-1c-0.7-0.8-0.7-2-0.8-3C1,11.8,1,10.1,1,8.9c0-1.1,0-2.4,0.5-3.4C2,4.5,3,4.3,4.1,4.2 C5.3,4.1,12.6,4,15,4.1z M8,7.5v6l5.5-3L8,7.5z"></path>
+                        </svg>
+                      </a></div>
+                    <div>
+                      <a class="el-link uk-icon" target="_blank" href="https://yelp.com/?&amp;style=white-red" uk-icon="icon: yelp;">
+                        <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="yelp">
+                          <path
+                            d="M17.175,14.971c-0.112,0.77-1.686,2.767-2.406,3.054c-0.246,0.1-0.487,0.076-0.675-0.069	c-0.122-0.096-2.446-3.859-2.446-3.859c-0.194-0.293-0.157-0.682,0.083-0.978c0.234-0.284,0.581-0.393,0.881-0.276	c0.016,0.01,4.21,1.394,4.332,1.482c0.178,0.148,0.263,0.379,0.225,0.646L17.175,14.971L17.175,14.971z M11.464,10.789	c-0.203-0.307-0.199-0.666,0.009-0.916c0,0,2.625-3.574,2.745-3.657c0.203-0.135,0.452-0.141,0.69-0.025	c0.691,0.335,2.085,2.405,2.167,3.199v0.027c0.024,0.271-0.082,0.491-0.273,0.623c-0.132,0.083-4.43,1.155-4.43,1.155	c-0.322,0.096-0.68-0.06-0.882-0.381L11.464,10.789z M9.475,9.563C9.32,9.609,8.848,9.757,8.269,8.817c0,0-3.916-6.16-4.007-6.351	c-0.057-0.212,0.011-0.455,0.202-0.65C5.047,1.211,8.21,0.327,9.037,0.529c0.27,0.069,0.457,0.238,0.522,0.479	c0.047,0.266,0.433,5.982,0.488,7.264C10.098,9.368,9.629,9.517,9.475,9.563z M9.927,19.066c-0.083,0.225-0.273,0.373-0.54,0.421	c-0.762,0.13-3.15-0.751-3.647-1.342c-0.096-0.131-0.155-0.262-0.167-0.394c-0.011-0.095,0-0.189,0.036-0.272	c0.061-0.155,2.917-3.538,2.917-3.538c0.214-0.272,0.595-0.355,0.952-0.213c0.345,0.13,0.56,0.428,0.536,0.749	C10.014,14.479,9.977,18.923,9.927,19.066z M3.495,13.912c-0.235-0.009-0.444-0.148-0.568-0.382c-0.089-0.17-0.151-0.453-0.19-0.794	C2.63,11.701,2.761,10.144,3.07,9.648c0.145-0.226,0.357-0.345,0.592-0.336c0.154,0,4.255,1.667,4.255,1.667	c0.321,0.118,0.521,0.453,0.5,0.833c-0.023,0.37-0.236,0.655-0.551,0.738L3.495,13.912z"></path>
+                        </svg>
+                      </a></div>-->
+
+                  </div>
+                </div>
+
+              </div>
+
+
+            </div>
           </div>
 
         </div>
 
+
       </div>
 
     </div>
 
 
   </div>
-
-  <div id="address" class="uk-section-default" uk-scrollspy="target: [uk-scrollspy-class]; cls: uk-animation-slide-right-medium; delay: false;">
-    <div uk-img=""
-         class="uk-background-norepeat uk-background-bottom-center uk-background-image@l uk-section " uk-parallax="bgx: -50,10"
-         style="background-position-x: calc(50% - 50px);">
-
-
-      <div class="uk-container">
-
-        <div class="uk-grid-large uk-margin uk-grid" uk-grid="">
-          <div class="uk-width-expand@m uk-grid-item-match uk-flex-middle uk-first-column">
-
-
-            <div class="uk-panel">
-
-              <div class="uk-margin uk-width-xxlarge@m uk-margin-auto uk-text-left@m uk-text-center"
-                   uk-scrollspy-class="uk-animation-slide-left-medium" style="visibility: hidden;">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2709.264307638861!2d-1.5659721840366447!3d47.230975679161425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805edf8000d97d1%3A0x3fbe8fd8429e4290!2sWork+in+Excess!5e0!3m2!1sfr!2sfr!4v1546616345155" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>				
-              </div>
-
-            </div>
-
-
-          </div>
-
-          <div class="uk-width-expand@m uk-grid-item-match uk-flex-middle">
-
-
-            <div class="uk-panel">
-              <div class="uk-margin uk-text-left@m uk-text-center uk-text-meta" uk-scrollspy-class="" style="visibility: hidden;">Venez visiter
-              </div>
-              <h2 class="uk-margin-medium uk-margin-remove-top uk-text-left@m uk-text-center" uk-scrollspy-class="" style="visibility: hidden;"><a
-                class="el-link uk-link-reset" href="tel:+33786481660">+33 7 86 48 16 60</a></h2>
-              <div class="uk-margin uk-text-left@m uk-text-center" uk-scrollspy-class="" style="visibility: hidden;">
-              </div>
-
-              <div class="uk-margin-large uk-text-left@m uk-text-center">
-                <div class="uk-child-width-1-1 uk-child-width-1-2@s uk-grid-match uk-grid" uk-grid="">
-                  <div class="uk-first-column">
-                    <div class="el-item uk-panel" uk-scrollspy-class="" style="visibility: hidden;">
-
-                      <h3 class="el-title uk-margin uk-h5 uk-text-primary"> Horaires </h3>
-                      <div class="el-content uk-margin"><p>Accueil ouvert du Lundi, vendredi<br>
-					  de 9h à 12h et de 14h à 19h</p></div>
-
-
-                    </div>
-                  </div>
-                  <div>
-                    <div class="el-item uk-panel" uk-scrollspy-class="" style="visibility: hidden;">
-
-
-                      <h3 class="el-title uk-margin uk-h5 uk-text-primary"> Adresse </h3>
-
-
-                      <div class="el-content uk-margin"><p>182 rue paul Bellamy<br>44000 NANTES<br></p></div>
-
-
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-
-              <div class="uk-margin uk-text-left@m uk-text-center" uk-scrollspy-class="" style="visibility: hidden;">
-                <div class="uk-child-width-auto uk-flex-left@m uk-flex-center uk-grid" uk-grid="">
-                  <!--<div class="uk-first-column">
-                    <a class="el-link uk-icon" target="_blank" href="https://twitter.com/?&amp;style=white-red" uk-icon="icon: twitter;">
-                      <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="twitter">
-                        <path
-                          d="M19,4.74 C18.339,5.029 17.626,5.229 16.881,5.32 C17.644,4.86 18.227,4.139 18.503,3.28 C17.79,3.7 17.001,4.009 16.159,4.17 C15.485,3.45 14.526,3 13.464,3 C11.423,3 9.771,4.66 9.771,6.7 C9.771,6.99 9.804,7.269 9.868,7.539 C6.795,7.38 4.076,5.919 2.254,3.679 C1.936,4.219 1.754,4.86 1.754,5.539 C1.754,6.82 2.405,7.95 3.397,8.61 C2.79,8.589 2.22,8.429 1.723,8.149 L1.723,8.189 C1.723,9.978 2.997,11.478 4.686,11.82 C4.376,11.899 4.049,11.939 3.713,11.939 C3.475,11.939 3.245,11.919 3.018,11.88 C3.49,13.349 4.852,14.419 6.469,14.449 C5.205,15.429 3.612,16.019 1.882,16.019 C1.583,16.019 1.29,16.009 1,15.969 C2.635,17.019 4.576,17.629 6.662,17.629 C13.454,17.629 17.17,12 17.17,7.129 C17.17,6.969 17.166,6.809 17.157,6.649 C17.879,6.129 18.504,5.478 19,4.74"></path>
-                      </svg>
-                    </a></div>-->
-                  <div>
-                    <a class="el-link uk-icon" target="_blank" href="https://www.facebook.com/workinexcess/" uk-icon="icon: facebook;">
-                      <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="facebook">
-                        <path d="M11,10h2.6l0.4-3H11V5.3c0-0.9,0.2-1.5,1.5-1.5H14V1.1c-0.3,0-1-0.1-2.1-0.1C9.6,1,8,2.4,8,5v2H5.5v3H8v8h3V10z"></path>
-                      </svg>
-                    </a></div>
-                  <div>
-                    <a class="el-link uk-icon" target="_blank" href="https://www.instagram.com/workinexcess/" uk-icon="icon: instagram;">
-                      <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="instagram">
-                        <path
-                          d="M13.55,1H6.46C3.45,1,1,3.44,1,6.44v7.12c0,3,2.45,5.44,5.46,5.44h7.08c3.02,0,5.46-2.44,5.46-5.44V6.44 C19.01,3.44,16.56,1,13.55,1z M17.5,14c0,1.93-1.57,3.5-3.5,3.5H6c-1.93,0-3.5-1.57-3.5-3.5V6c0-1.93,1.57-3.5,3.5-3.5h8 c1.93,0,3.5,1.57,3.5,3.5V14z"></path>
-                        <circle cx="14.87" cy="5.26" r="1.09"></circle>
-                        <path
-                          d="M10.03,5.45c-2.55,0-4.63,2.06-4.63,4.6c0,2.55,2.07,4.61,4.63,4.61c2.56,0,4.63-2.061,4.63-4.61 C14.65,7.51,12.58,5.45,10.03,5.45L10.03,5.45L10.03,5.45z M10.08,13c-1.66,0-3-1.34-3-2.99c0-1.65,1.34-2.99,3-2.99s3,1.34,3,2.99 C13.08,11.66,11.74,13,10.08,13L10.08,13L10.08,13z"></path>
-                      </svg>
-                    </a></div>
-                  <!--<div>
-                    <a class="el-link uk-icon" target="_blank" href="https://www.youtube.com/?&amp;style=white-red" uk-icon="icon: youtube;">
-                      <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="youtube">
-                        <path
-                          d="M15,4.1c1,0.1,2.3,0,3,0.8c0.8,0.8,0.9,2.1,0.9,3.1C19,9.2,19,10.9,19,12c-0.1,1.1,0,2.4-0.5,3.4c-0.5,1.1-1.4,1.5-2.5,1.6 c-1.2,0.1-8.6,0.1-11,0c-1.1-0.1-2.4-0.1-3.2-1c-0.7-0.8-0.7-2-0.8-3C1,11.8,1,10.1,1,8.9c0-1.1,0-2.4,0.5-3.4C2,4.5,3,4.3,4.1,4.2 C5.3,4.1,12.6,4,15,4.1z M8,7.5v6l5.5-3L8,7.5z"></path>
-                      </svg>
-                    </a></div>
-                  <div>
-                    <a class="el-link uk-icon" target="_blank" href="https://yelp.com/?&amp;style=white-red" uk-icon="icon: yelp;">
-                      <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="yelp">
-                        <path
-                          d="M17.175,14.971c-0.112,0.77-1.686,2.767-2.406,3.054c-0.246,0.1-0.487,0.076-0.675-0.069	c-0.122-0.096-2.446-3.859-2.446-3.859c-0.194-0.293-0.157-0.682,0.083-0.978c0.234-0.284,0.581-0.393,0.881-0.276	c0.016,0.01,4.21,1.394,4.332,1.482c0.178,0.148,0.263,0.379,0.225,0.646L17.175,14.971L17.175,14.971z M11.464,10.789	c-0.203-0.307-0.199-0.666,0.009-0.916c0,0,2.625-3.574,2.745-3.657c0.203-0.135,0.452-0.141,0.69-0.025	c0.691,0.335,2.085,2.405,2.167,3.199v0.027c0.024,0.271-0.082,0.491-0.273,0.623c-0.132,0.083-4.43,1.155-4.43,1.155	c-0.322,0.096-0.68-0.06-0.882-0.381L11.464,10.789z M9.475,9.563C9.32,9.609,8.848,9.757,8.269,8.817c0,0-3.916-6.16-4.007-6.351	c-0.057-0.212,0.011-0.455,0.202-0.65C5.047,1.211,8.21,0.327,9.037,0.529c0.27,0.069,0.457,0.238,0.522,0.479	c0.047,0.266,0.433,5.982,0.488,7.264C10.098,9.368,9.629,9.517,9.475,9.563z M9.927,19.066c-0.083,0.225-0.273,0.373-0.54,0.421	c-0.762,0.13-3.15-0.751-3.647-1.342c-0.096-0.131-0.155-0.262-0.167-0.394c-0.011-0.095,0-0.189,0.036-0.272	c0.061-0.155,2.917-3.538,2.917-3.538c0.214-0.272,0.595-0.355,0.952-0.213c0.345,0.13,0.56,0.428,0.536,0.749	C10.014,14.479,9.977,18.923,9.927,19.066z M3.495,13.912c-0.235-0.009-0.444-0.148-0.568-0.382c-0.089-0.17-0.151-0.453-0.19-0.794	C2.63,11.701,2.761,10.144,3.07,9.648c0.145-0.226,0.357-0.345,0.592-0.336c0.154,0,4.255,1.667,4.255,1.667	c0.321,0.118,0.521,0.453,0.5,0.833c-0.023,0.37-0.236,0.655-0.551,0.738L3.495,13.912z"></path>
-                      </svg>
-                    </a></div>-->
-
-                </div>
-              </div>
-
-            </div>
-
-
-          </div>
-        </div>
-
-      </div>
-
-
-    </div>
-
-  </div>
-
-
-</div>
 
 
 </body>

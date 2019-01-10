@@ -8102,7 +8102,8 @@ ul.uk-nav-sub {
   display: flex;
   margin: 0;
   padding: 0;
-  list-style: none
+  list-style: none;
+  text-shadow: 2px 2px 5px #000000c4;
 }
 
 .uk-navbar-center:only-child, .uk-navbar-left, .uk-navbar-right {
@@ -13559,3 +13560,12 @@ body {
 .demo {
   background: #461619
 }
+
+.mk-svg-icon {
+  height: 48px;
+}
+/*
+.header-text {
+  text-shadow: 2px 2px 5px #000000c4;
+}
+*/

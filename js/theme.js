@@ -206,13 +206,6 @@
 
     ready(function () {
 
-        // Hide ZOO and Shop submenu on modal main menu
-        $$('.uk-modal-full .uk-nav.uk-nav-primary li, .uk-offcanvas-bar .uk-nav.uk-nav-primary li').forEach(function (li) {
-            if ($('a', li).innerHTML.match(/ZOO|Shop/)) {
-                css($$('.uk-nav-sub', li), 'display', 'none');
-            }
-        });
-
         if (style !== 'default') {
 
             setTimeout(function () {
