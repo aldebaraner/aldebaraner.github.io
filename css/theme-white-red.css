@@ -6641,28 +6641,28 @@ select.uk-form-width-xsmall {
 
 .uk-section-default {
   background: #fff;
-  background-image: url(../vendor/assets/uikit-themes/master-florence/images/section-light-background.svg);
+  background-image: url(./images/section-light-background.svg);
   background-position-x: 50%;
   background-repeat: repeat-y
 }
 
 .uk-section-muted {
   background: #f8f8f8;
-  background-image: url(../vendor/assets/uikit-themes/master-florence/images/section-light-background.svg);
+  background-image: url(./images/section-light-background.svg);
   background-position-x: 50%;
   background-repeat: repeat-y
 }
 
 .uk-section-primary {
   background: #f1636c;
-  background-image: url(../vendor/assets/uikit-themes/master-florence/images/section-light-background.svg);
+  background-image: url(./images/section-light-background.svg);
   background-position-x: 50%;
   background-repeat: repeat-y
 }
 
 .uk-section-secondary {
   background: #4f3a50;
-  background-image: url(../vendor/assets/uikit-themes/master-florence/images/section-dark-background.svg);
+  background-image: url(./images/section-dark-background.svg);
   background-position-x: 50%;
   background-repeat: repeat-y
 }
