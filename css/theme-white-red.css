@@ -6641,14 +6641,14 @@ select.uk-form-width-xsmall {
 
 .uk-section-default {
   background: #fff;
-  background-image: url(./images/section-light-background.svg);
+  background-image: url(../img/section-light-background.svg);
   background-position-x: 50%;
   background-repeat: repeat-y
 }
 
 .uk-section-muted {
   background: #f8f8f8;
-  background-image: url(./images/section-light-background.svg);
+  background-image: url(../img/section-light-background.svg);
   background-position-x: 50%;
   background-repeat: repeat-y
 }
@@ -9442,7 +9442,7 @@ ul.uk-nav-sub {
 }
 
 :root {
-  --uk-leader-fill-content: '.'
+  --uk-leader-fill-content: .
 }
 
 .uk-iconnav {
