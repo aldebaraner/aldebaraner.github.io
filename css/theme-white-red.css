@@ -6655,14 +6655,14 @@ select.uk-form-width-xsmall {
 
 .uk-section-primary {
   background: #f1636c;
-  background-image: url(./images/section-light-background.svg);
+  background-image: url(../img/section-light-background.svg);
   background-position-x: 50%;
   background-repeat: repeat-y
 }
 
 .uk-section-secondary {
   background: #4f3a50;
-  background-image: url(./images/section-dark-background.svg);
+  background-image: url(../img/section-dark-background.svg);
   background-position-x: 50%;
   background-repeat: repeat-y
 }
@@ -9442,7 +9442,7 @@ ul.uk-nav-sub {
 }
 
 :root {
-  --uk-leader-fill-content: .
+  --uk-leader-fill-content: '.'
 }
 
 .uk-iconnav {
@@ -12542,11 +12542,10 @@ iframe.uk-cover {
 .tm-toolbar .uk-link, .tm-toolbar a, .uk-card-primary.uk-card-body .uk-link, .uk-card-primary.uk-card-body a, .uk-card-primary > :not([class*=uk-card-media]) .uk-link, .uk-card-primary > :not([class*=uk-card-media]) a, .uk-card-secondary.uk-card-body .uk-link, .uk-card-secondary.uk-card-body a, .uk-card-secondary > :not([class*=uk-card-media]) .uk-link, .uk-card-secondary > :not([class*=uk-card-media]) a, .uk-light .uk-link, .uk-light a, .uk-overlay-primary .uk-link, .uk-overlay-primary a, .uk-section-primary:not(.uk-preserve-color) .uk-link, .uk-section-primary:not(.uk-preserve-color) a, .uk-section-secondary:not(.uk-preserve-color) .uk-link, .uk-section-secondary:not(.uk-preserve-color) a, .uk-tile-primary:not(.uk-preserve-color) .uk-link, .uk-tile-primary:not(.uk-preserve-color) a, .uk-tile-secondary:not(.uk-preserve-color) .uk-link, .uk-tile-secondary:not(.uk-preserve-color) a {
   color: #fff
 }
+
 .uk-navbar-container:not(.uk-navbar-transparent) .uk-navbar-nav li a:hover {
   color: rgba(0, 0, 0, .7)
 }
-
-
 
 .tm-toolbar .uk-link:hover, .tm-toolbar a:hover, .uk-card-primary.uk-card-body .uk-link:hover, .uk-card-primary.uk-card-body a:hover, .uk-card-primary > :not([class*=uk-card-media]) .uk-link:hover, .uk-card-primary > :not([class*=uk-card-media]) a:hover, .uk-card-secondary.uk-card-body .uk-link:hover, .uk-card-secondary.uk-card-body a:hover, .uk-card-secondary > :not([class*=uk-card-media]) .uk-link:hover, .uk-card-secondary > :not([class*=uk-card-media]) a:hover, .uk-light .uk-link:hover, .uk-light a:hover, .uk-overlay-primary .uk-link:hover, .uk-overlay-primary a:hover, .uk-section-primary:not(.uk-preserve-color) .uk-link:hover, .uk-section-primary:not(.uk-preserve-color) a:hover, .uk-section-secondary:not(.uk-preserve-color) .uk-link:hover, .uk-section-secondary:not(.uk-preserve-color) a:hover, .uk-tile-primary:not(.uk-preserve-color) .uk-link:hover, .uk-tile-primary:not(.uk-preserve-color) a:hover, .uk-tile-secondary:not(.uk-preserve-color) .uk-link:hover, .uk-tile-secondary:not(.uk-preserve-color) a:hover {
   color: rgba(255, 255, 255, .7)
